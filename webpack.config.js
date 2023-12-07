@@ -1,5 +1,5 @@
-const path    = require("path")
-const webpack = require("webpack")
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
   mode: "production",
@@ -10,9 +10,13 @@ module.exports = {
   module: {
     rules: [
       {
-    test: /\.(js)$/,
-    exclude: /node_modules/,
-    use: ['babel-loader'],
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
@@ -26,4 +30,4 @@ module.exports = {
       maxChunks: 1
     })
   ]
-}
+};

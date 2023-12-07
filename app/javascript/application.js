@@ -4,6 +4,6 @@ import App from './components/App';
 import './index.css';
 
 ReactDom.render(
-  <App/>,
+  <App />,
   document.getElementById('root'),
 );

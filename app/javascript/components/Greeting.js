@@ -12,8 +12,9 @@ const Greeting = ({ greeting, setGreeting }) => {
 
   return (
     <div>
-      <h1>Welcome to this simple app!</h1>
-      <h1>{greeting}</h1>
+      <h1 className='alert alert-primary' role='alert'>Welcome to this simple app!</h1>
+      <p>Refresh the page to see new greetings</p>
+      <h4>{greeting}</h4>
     </div>
   );
 };

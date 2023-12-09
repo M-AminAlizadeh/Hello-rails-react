@@ -5,11 +5,11 @@ ruby '3.2.2'
 gem 'bootsnap', require: false
 gem 'jbuilder'
 gem 'jsbundling-rails'
+gem 'pg'
 gem 'puma', '>= 5.0'
 gem 'rails', '~> 7.1.2'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'sprockets-rails'
-gem 'pg'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
